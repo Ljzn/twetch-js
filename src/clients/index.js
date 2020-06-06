@@ -183,8 +183,10 @@ class Client {
 	}
 
 	async publishRequest(payload) {
-		const response = await this.client.post('/publish', payload);
-		return response.data;
+		console.log(payload);
+		// const response = await this.client.post('/publish', payload);
+		// return response.data;
+		return false;
 	}
 
 	async bsvPrice() {
